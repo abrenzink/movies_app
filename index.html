@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Choose your movie</title>
+        <meta name="description" content="You can find your movie through gender, name, or publication year.">
+        <link rel="stylesheet" href="/project/css/style.css">
+        
+    </head>
+    <body class="container">
+        <header>
+            <img class="logo" src="/project/images/logo.png" alt="My logo">
+            <div class="htitle">
+                <h1>Choose your movie</h1>
+            </div>
+        </header>
+
+        <div class="info">
+            <p>Watching free movies online is a convenient and frugal way to see the films you love right from the comfort of your own home.</p>
+            <p>Choose your movie and enjoy the best option.</p>
+            
+        </div>
+        
+
+        <form name="myForm" class="main-input">
+            <h2>Search for a movie</h2>
+            <input id="fn" type="text" name="yourname" size="25" autofocus placeholder="Enter name, title, genre, etc here" required="required">
+
+            <button class="calculate" onclick="calculate()">Search</button>
+            <button class="calculate" onclick="clearForm(this.form);" value="Clear">Try again</button>
+        </form>
+
+        <!-- Progress Bar -->
+        <div id="myProgress">
+            <div id="myBar"></div>
+        </div>
+        <!-- Progress Bar -->
+
+<!-- Here I show the results -->
+<div class="main-result">
+    <span id="main-result-block" class="main-result-block invisible"></span>
+        <img id="happy" class="result_image invisible" src="/project/images/happy.gif" alt="Congratulations! Good choice">
+        <img id="neutral" class="result_image invisible" src="/project/images/neutral.gif" alt="All the best!">
+        <img id="nope" class="result_image invisible" src="/project/images/nope.gif" alt="Can choose someone better.">
+    <div>
+        <span id="result"></span>
+    </div>
+</div>
+<!-- Here I show the results -->
+
+<footer>
+    <p class="footer-info">&copy; 2021 | WDD-330 | Information About choose your movie</p>
+    
+</footer>
+<script src="/project/js/main.js"></script>
+</body>
+</html>
