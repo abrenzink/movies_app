@@ -7,7 +7,7 @@ const options = {
 };
 
 function searchURL(){
-    let input = document.querySelector("#fn").value;
+    let input = document.querySelector("#fn").innerHTML;
     console.log(input)
 
     //let html = 'https://movie-database-alternative.p.rapidapi.com/?s=' + input + '&r=json&page=1'
