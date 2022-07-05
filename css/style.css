@@ -10,8 +10,7 @@ header {
   color: white;
   display: flex;
   align-items: center;
-  padding-left: 12px;
-  padding-top: 15px;
+  padding: 12px;
 }
 
 .logo {
@@ -82,7 +81,7 @@ p {
   box-shadow: 4px 4px 11px 3px #7A0000;
 }
 
-.calculate {
+.search {
   background: #7A0000;
   color: white;
   border-color: #FF5C5C;
@@ -91,7 +90,7 @@ p {
   margin: 7px;
 }
 
-.calculate:hover {
+.search:hover {
   background-color: #FF5C5C;
   border-color: #7A0000;
   cursor: pointer;

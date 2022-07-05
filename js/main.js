@@ -5,16 +5,15 @@ const options = {
 		'X-RapidAPI-Host': 'movie-database-alternative.p.rapidapi.com'
 	}
 };
-let input = document.getElementById("fn");
 
-let html = 'https://movie-database-alternative.p.rapidapi.com/?s=' + input + '&r=json&page=1'
+function searchURL(){
+    let input = document.querySelector("#fn").value;
+    console.log(input)
 
-fetch(html, options)
-	.then(response => response.json())
-	.then(response => console.log(response))
-	.catch(err => console.error(err));
+    //let html = 'https://movie-database-alternative.p.rapidapi.com/?s=' + input + '&r=json&page=1'
 
-function search(){
-    
+    // await fetch(html, options)
+	// .then(response => response.json())
+	// .then(response => console.log(response))
+	// .catch(err => console.error(err));
 }
-
