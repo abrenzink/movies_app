@@ -6,6 +6,8 @@ export function addListener(event, elementId, callback){
 }
 
 export function searchMovie(){
+    const div = document.querySelector(".main-result")
+    div.innerHTML = "";
 	let search = new ExternalServices();
 	search.getData();
 }

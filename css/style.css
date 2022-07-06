@@ -135,7 +135,7 @@ footer {
 .main-result{
   padding: 20px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   flex-wrap: wrap;
 }
 
@@ -146,7 +146,7 @@ footer {
 }
 
 .movie-poster{
-  max-width: 50%;
+  max-width: 85%;
   margin: 5px auto;
 }
 
