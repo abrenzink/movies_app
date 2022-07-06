@@ -7,7 +7,10 @@
         <title>Choose your movie</title>
         <meta name="description" content="You can find your movie through gender, name, or publication year.">
         <link rel="stylesheet" href="css/style.css">
-        <template id="movie-card-template"></template>
+        <template id="movie-card-template">
+            <img id="movie-poster"/>
+            <p><span id="movie-title"></span> - <span id="movie-year"></span></p>
+        </template>
     </head>
     <body class="container">
         <header>
@@ -29,12 +32,9 @@
             <!-- <button class="calculate" onclick="clearForm(this.form);" value="Clear">Try again</button> -->
         </form>
         <button class="search" onclick="searchMovie()">Search</button>
-        <div id="myProgress">
-            <div id="myBar"></div>
-        </div>
 
         <div class="main-result">
-            <!-- Here we show the results using a template -->
+            <!-- Here we show the results using movie cards template -->
         </div>
 
         <footer>

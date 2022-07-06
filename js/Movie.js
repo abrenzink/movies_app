@@ -1,0 +1,9 @@
+class Movie{
+    constructor(){
+    
+    }
+
+    renderWithTemplate(){
+    
+    }
+}

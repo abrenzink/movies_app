@@ -1,3 +1,4 @@
+import { prepareResults } from "./utils";
 
 const options = {
 	method: 'GET',
@@ -8,12 +9,14 @@ const options = {
 };
 
 const baseURL = "https://movie-database-alternative.p.rapidapi.com/";
-let movie = "Insideout"
+let movie;
 
 function searchMovie(){
 	movie = document.querySelector("#fn").value;
 	fetch(`${baseURL}?s=${movie}&r=json&page=1`, options)
 	.then(response => response.json())
-	.then(response => console.log(response))
+	.then(response => {
+		prepareResults(response.Results);
+	})
 	.catch(err => console.error(err));
 }

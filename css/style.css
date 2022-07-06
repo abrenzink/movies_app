@@ -77,8 +77,9 @@ p {
 
 .container {
   margin: 0 auto;
-  width: 380px !important;
+  min-width: 380px !important;
   box-shadow: 4px 4px 11px 3px #7A0000;
+  text-align: center;
 }
 
 .search {
