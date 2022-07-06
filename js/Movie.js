@@ -6,9 +6,14 @@ export default class Movie{
         this.poster = data.Poster;
     }
 
-    renderWithTemplate(template, parent){
-        let card = template.content.cloneNode(true);
-        
+    renderWithTemplate(parent){
+        const template = document.getElementById("movie-card-template")
+        const card = template.content.cloneNode(true);
+        // console.log(this.title, this.year, this.type, this.poster)
+        console.log(card)
+        card.querySelector("img").src = this.poster;
+        card.querySelector(".movie-title").textContent = this.title;
+        card.querySelector(".movie-year").textContent = this.year;
         parent.appendChild(card);
     }
 }

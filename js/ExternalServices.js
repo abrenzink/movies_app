@@ -20,7 +20,6 @@ export default class ExternalServices {
       .then(response => response.json())
       .then(response => {
         const div = document.querySelector(".main-result")
-        console.log(div)
         const list = new List(response.Search);
         list.prepareList(div);
       })

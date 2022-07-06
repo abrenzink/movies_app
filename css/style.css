@@ -131,3 +131,22 @@ input:valid {
 footer {
   background-color: #e0e2db;
 }
+
+.main-result{
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.movie-card{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.movie-poster{
+  max-width: 50%;
+  margin: 5px auto;
+}
+

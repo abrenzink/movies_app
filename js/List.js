@@ -6,12 +6,10 @@ export default class List{
     }
 
     prepareList(parent){
-        console.log(parent)
-        const template = document.getElementById("movie-card-template")
         this.list.forEach(element => {
             const movie = new Movie(element);
-            movie.renderWithTemplate(template, parent);
-            parent.append(movie);
+            movie.renderWithTemplate(parent);
         });
+
     }
 }
