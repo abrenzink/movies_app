@@ -1,3 +1,4 @@
+
 const options = {
 	method: 'GET',
 	headers: {
@@ -6,14 +7,13 @@ const options = {
 	}
 };
 
-function searchURL(){
-    let input = document.querySelector("#fn").innerHTML;
-    console.log(input)
+const baseURL = "https://movie-database-alternative.p.rapidapi.com/";
+let movie = "Insideout"
 
-    //let html = 'https://movie-database-alternative.p.rapidapi.com/?s=' + input + '&r=json&page=1'
-
-    // await fetch(html, options)
-	// .then(response => response.json())
-	// .then(response => console.log(response))
-	// .catch(err => console.error(err));
+function searchMovie(){
+	movie = document.querySelector("#fn").value;
+	fetch(`${baseURL}?s=${movie}&r=json&page=1`, options)
+	.then(response => response.json())
+	.then(response => console.log(response))
+	.catch(err => console.error(err));
 }
