@@ -9,7 +9,7 @@
         <link rel="stylesheet" href="css/style.css">
         <template id="movie-card-template">
             <img id="movie-poster"/>
-            <p><span id="movie-title"></span> - <span id="movie-year"></span></p>
+            <p><span class="movie-title"></span> - <span class="movie-year"></span></p>
         </template>
     </head>
     <body class="container">
@@ -31,7 +31,7 @@
             
             <!-- <button class="calculate" onclick="clearForm(this.form);" value="Clear">Try again</button> -->
         </form>
-        <button class="search" onclick="searchMovie()">Search</button>
+        <button class="search">Search</button>
 
         <div class="main-result">
             <!-- Here we show the results using movie cards template -->
@@ -40,6 +40,6 @@
         <footer>
             <p class="footer-info">&copy; 2022 | WDD-330 | Information About choose your movie</p>
         </footer>
-        <script src="js/main.js"></script>
+        <script src="js/main.js" type="module"></script>
     </body>
 </html>

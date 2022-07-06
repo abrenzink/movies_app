@@ -1,3 +1,5 @@
+import List from "./List.js"
+
 const options = {
 	method: 'GET',
 	headers: {
@@ -9,14 +11,18 @@ const options = {
 const baseURL = "https://movie-database-alternative.p.rapidapi.com/";
 
 export default class ExternalServices {
-    constructor(){}
+    constructor(){
+      this.search = document.querySelector("#fn").value;
+    }
 
-    getData(movie) {
-      let movie = document.querySelector("#fn").value;
-      fetch(`${baseURL}?s=${movie}&r=json&page=1`, options)
+    async getData() {
+      await fetch(`${baseURL}?s=${this.search}&r=json&page=1`, options)
       .then(response => response.json())
       .then(response => {
-        console.log(response.search)
+        const div = document.querySelector(".main-result")
+        console.log(div)
+        const list = new List(response.Search);
+        list.prepareList(div);
       })
       .catch(err => console.error(err));
     }
