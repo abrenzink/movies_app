@@ -4,6 +4,7 @@ export default class Movie{
         this.year = data.Year;
         this.type = data.Type;
         this.poster = data.Poster;
+        this.href = `../movie-page/index.html?movie=${this.title}`;
     }
 
     renderWithTemplate(parent){

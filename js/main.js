@@ -1,4 +1,10 @@
-import { addListener, searchMovie} from "./utils.js"
+import { addListener, searchMovie, renderList} from "./utils.js"
 
-addListener("click", "button.search", searchMovie)
+
+addListener("click", "button.search", async () => {
+    const value = document.querySelector("#fn").value;
+    const div = document.querySelector(".main-result");
+    const data = await searchMovie(div, value);
+    renderList(data, div);
+});
 
