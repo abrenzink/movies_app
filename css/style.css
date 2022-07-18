@@ -1,17 +1,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Zilla+Slab&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Arima:wght@300;400;600&family=Dela+Gothic+One&family=Zilla+Slab&display=swap");
 /* Variables */
-body {
+.container {
+  margin: 0 auto;
+  text-align: center;
   background-color: #FFFFFF;
 }
-body header {
-  background-color: #2E3532;
+.container header {
+  background: linear-gradient(to right, #2E3532, #E0E2DB);
   color: #FFFFFF;
   display: flex;
   align-items: center;
   padding: 12px;
 }
-body header .logo {
+.container header .logo {
   width: 80px;
   margin-right: 10px;
   animation: logo 3s;
@@ -30,38 +32,72 @@ body header .logo {
     transform: rotate(360deg);
   }
 }
-body header .htitle {
+.container header .htitle {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-body header .htitle h1 {
+.container header .htitle h1 {
   font-family: "Dela Gothic One", cursive;
   font-size: 40px;
   color: #FFFFFF;
   text-align: center;
   margin: 0;
 }
-body .info p {
+.container .info p {
+  font-family: "Arima", cursive;
   color: #2E3532;
   padding: 15px;
   font-size: 20px;
   text-align: initial;
 }
-
-h2 {
+.container .main-input {
+  display: flex;
+  flex-direction: column;
+  padding: 0 1.5rem;
+  align-items: center;
+}
+.container .main-input h2 {
   font-family: "Dela Gothic One", cursive;
   font-size: 25px;
   color: #8B2635;
   text-align: center;
   margin: 0;
 }
+.container .main-input input {
+  font-size: 20px;
+  background: white;
+  color: #7A0000;
+  padding: 10px;
+  margin: 3px;
+}
+.container .main-input input:invalid {
+  border: 2px solid #2E3532;
+}
+.container .main-input input:invalid:required {
+  background: linear-gradient(to right, #E0E2DB, #2E3532);
+  background-color: #fcc;
+}
+.container .main-input input:valid {
+  border: 2px solid white;
+  background-color: #ccb4b4;
+  color: #2E3532;
+}
 
-h3 {
-  font-family: "Dela Gothic One", cursive;
-  font-size: 25px;
+.search {
+  background: #7A0000;
   color: white;
-  text-align: center;
+  border-color: #FF5C5C;
+  font-size: 20px;
+  padding: 10px;
+  margin: 7px;
+  max-width: 19rem;
+}
+
+.search:hover {
+  background-color: #FF5C5C;
+  border-color: #7A0000;
+  cursor: pointer;
 }
 
 footer {
@@ -76,68 +112,6 @@ footer .footer-info {
   font-size: 15px;
   color: #2E3532;
   text-align: center;
-}
-
-p {
-  font-family: "Arima", cursive;
-  font-size: 24px;
-  color: white;
-  margin: 0;
-  padding: 2px 10px;
-}
-
-.container {
-  margin: 0 auto;
-  min-width: 380px !important;
-  box-shadow: 4px 4px 11px 3px #7A0000;
-  text-align: center;
-}
-
-.search {
-  background: #7A0000;
-  color: white;
-  border-color: #FF5C5C;
-  font-size: 20px;
-  padding: 10px;
-  margin: 7px;
-}
-
-.search:hover {
-  background-color: #FF5C5C;
-  border-color: #7A0000;
-  cursor: pointer;
-}
-
-form,
-div {
-  text-align: center;
-}
-
-.invisible {
-  display: none;
-}
-
-input {
-  font-size: 20px;
-  background: white;
-  color: #7A0000;
-  padding: 10px;
-  margin: 3px;
-}
-
-input:invalid {
-  border: 2px dashed #ff8a80;
-}
-
-input:invalid:required {
-  background-image: linear-gradient(to right, white, #FF5C5C);
-  background-color: #fcc;
-}
-
-input:valid {
-  border: 2px solid white;
-  background-color: #FF5C5C;
-  color: white;
 }
 
 .main-result {
@@ -156,6 +130,13 @@ input:valid {
   text-align: center;
   border-radius: 12px;
   box-shadow: 10px 10px 8px #888888;
+}
+.main-result .movie-card p {
+  font-family: "Arima", cursive;
+  font-size: 24px;
+  color: white;
+  margin: 0;
+  padding: 2px 10px;
 }
 .main-result .movie-card .movie-poster {
   margin: 5px auto;
