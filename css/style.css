@@ -1,76 +1,85 @@
-@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Zilla+Slab&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Arima:wght@300;400;600&family=Dela+Gothic+One&family=Zilla+Slab&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Zilla+Slab&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Arima:wght@300;400;600&family=Dela+Gothic+One&family=Zilla+Slab&display=swap");
+/* Variables */
 body {
-  background-color: white;
+  background-color: #FFFFFF;
 }
-
-header {
+body header {
   background-color: #2E3532;
-  color: white;
+  color: #FFFFFF;
   display: flex;
   align-items: center;
   padding: 12px;
 }
-
-.logo {
+body header .logo {
   width: 80px;
   margin-right: 10px;
+  animation: logo 3s;
 }
-
-.htitle {
+@keyframes logo {
+  10% {
+    transform: none;
+  }
+  40% {
+    transform: none;
+  }
+  70% {
+    transform: none;
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+body header .htitle {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-
-h1,
-h2 {
-  font-family: 'Dela Gothic One', cursive;
+body header .htitle h1 {
+  font-family: "Dela Gothic One", cursive;
   font-size: 40px;
-  color: white;
+  color: #FFFFFF;
+  text-align: center;
+  margin: 0;
+}
+body .info p {
+  color: #2E3532;
+  padding: 15px;
+  font-size: 20px;
+  text-align: initial;
+}
+
+h2 {
+  font-family: "Dela Gothic One", cursive;
+  font-size: 25px;
+  color: #8B2635;
   text-align: center;
   margin: 0;
 }
 
-h2 {
-  font-family: 'Dela Gothic One', cursive;
-  font-size: 25px;
-  color: #8B2635;
-  text-align: center;
-}
-
 h3 {
-  font-family: 'Dela Gothic One', cursive;
+  font-family: "Dela Gothic One", cursive;
   font-size: 25px;
   color: white;
   text-align: center;
 }
 
 footer {
+  background-color: #E0E2DB;
   margin-top: 10px;
-  font-family: 'Arima', cursive;
+  font-family: "Arima", cursive;
   font-size: 15px;
   padding: 15px;
 }
-
-.footer-info {
-  font-family:'Arima', cursive;
+footer .footer-info {
+  font-family: "Arima", cursive;
   font-size: 15px;
   color: #2E3532;
   text-align: center;
 }
 
-.info p {
-  color: #2E3532;
-  padding: 15px;
-  font-size: 20px;
-  text-align: initial;
-  
-}
-
 p {
-  font-family: 'Arima', cursive;
+  font-family: "Arima", cursive;
   font-size: 24px;
   color: white;
   margin: 0;
@@ -130,19 +139,15 @@ input:valid {
   background-color: #FF5C5C;
   color: white;
 }
-footer {
-  background-color: #e0e2db;
-}
 
-.main-result{
+.main-result {
   padding: 20px;
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
   gap: 40px;
 }
-
-.movie-card{
+.main-result .movie-card {
   background-color: #2E3532;
   width: 250px;
   padding: 15px 0 5px 0;
@@ -150,11 +155,25 @@ footer {
   flex-direction: column;
   text-align: center;
   border-radius: 12px;
-  box-shadow: 10px 10px 8px #888888
+  box-shadow: 10px 10px 8px #888888;
 }
-
-.movie-poster{
+.main-result .movie-card .movie-poster {
   margin: 5px auto;
   width: 100%;
 }
+.main-result .movie-card:hover {
+  animation: movie 1s;
+}
+@keyframes movie {
+  0% {
+    transform: none;
+  }
+  30% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: none;
+  }
+}
 
+/*# sourceMappingURL=style.css.map */
