@@ -2,12 +2,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Arima:wght@300;400;600&family=Dela+Gothic+One&family=Zilla+Slab&display=swap');
 
 /* Variables */
-$base: #FFFFFF;
-$base2: #E0E2DB;
+$white: #FFFFFF;
+$lgray: #E0E2DB;
+$gray: #888888;
+$dark: #2E3532;
 $accent: #7A0000;
-$accent2: #2E3532;
+$accent2: #8B2635;
 $accent3: #FF5C5C;
-$base-font: #2E3532;
-$accent-font: #8B2635;
 
+$font-accent: 'Dela Gothic One', cursive;
+$font-base: 'Arima', cursive;
+
+//animation-rules
+
+@keyframes movie {
+    0% {transform: none;}
+    30% {transform: scale(1.1);}
+    30% {box-shadow: none;}
+    100% {transform: none;}
+}
+
+  @keyframes logo {
+    10% {transform: none;}
+    40% {transform: none;}
+    100% {transform: rotate(360deg)};
+  }
 
