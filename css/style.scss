@@ -71,33 +71,19 @@
       background-color: $lgray;
       color: $dark;
     }
-  }
-}
-//boton fuera del formulario
-.search {
-  background: $accent;
-  color: $white;
-  border-color: $accent3;
-  font-size: 1.5rem;
-  padding: .5rem;
-  margin: .2rem;
-  max-width: 19rem;
-}
-
-.search:hover {
-  background-color: $accent3;
-  border-color: $accent;
-}
-
-footer {
-  background-color: $lgray;
-  margin-top: .5rem;
-  padding: .5rem;
-  .footer-info {
-    font-family:'Arima', cursive;
-    font-size: 1.2rem;
-    color: $dark;
-    margin: .2rem;
+    .search {
+      background: $accent;
+      color: $white;
+      border-color: $accent3;
+      font-size: 1.5rem;
+      padding: .5rem;
+      margin: .2rem;
+      max-width: 19rem;
+    }
+    .search:hover {
+      background-color: $accent3;
+      border-color: $accent;
+    }
   }
 }
 
@@ -128,5 +114,17 @@ footer {
   }
   .movie-card:hover {
     animation: movie 1s;
+  }
+}
+
+footer {
+  background-color: $lgray;
+  margin-top: .5rem;
+  padding: .5rem;
+  .footer-info {
+    font-family:'Arima', cursive;
+    font-size: 1.2rem;
+    color: $dark;
+    margin: .2rem;
   }
 }
