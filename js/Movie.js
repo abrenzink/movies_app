@@ -3,8 +3,8 @@ export default class Movie{
         this.title = data.Title;
         this.year = data.Year;
         this.type = data.Type;
-        let cadena = data.Poster;
-        if(data.Poster == "N/A" || cadena.substr(0,1) == ".."){
+      //  let cadena = data.Poster;
+        if(data.Poster == "N/A" || data.Poster.substr(0,1) == ".."){
             this.poster = "../images/img-movi.jpg"
         } else{
             this.poster = data.Poster; 
