@@ -27,4 +27,12 @@ $font-base: 'Arima', cursive;
     40% {transform: none;}
     100% {transform: rotate(360deg)};
   }
+  @keyframes card {
+    0% {opacity: 0;}
+    20% {opacity: .2;}
+    40% {opacity: .4;}
+    60% {opacity: .6;}
+    80% {opacity: .8;}
+    100% {opacity: 1;}
+  }
 

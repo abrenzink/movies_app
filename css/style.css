@@ -26,6 +26,26 @@
     transform: rotate(360deg);
   }
 }
+@keyframes card {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 0.2;
+  }
+  40% {
+    opacity: 0.4;
+  }
+  60% {
+    opacity: 0.6;
+  }
+  80% {
+    opacity: 0.8;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 .container {
   margin: 0 auto;
   text-align: center;
@@ -99,8 +119,7 @@
   background-color: #E0E2DB;
   color: #2E3532;
 }
-
-.search {
+.container .main-input .search {
   background: #7A0000;
   color: #FFFFFF;
   border-color: #FF5C5C;
@@ -109,22 +128,9 @@
   margin: 0.2rem;
   max-width: 19rem;
 }
-
-.search:hover {
+.container .main-input .search:hover {
   background-color: #FF5C5C;
   border-color: #7A0000;
-}
-
-footer {
-  background-color: #E0E2DB;
-  margin-top: 0.5rem;
-  padding: 0.5rem;
-}
-footer .footer-info {
-  font-family: "Arima", cursive;
-  font-size: 1.2rem;
-  color: #2E3532;
-  margin: 0.2rem;
 }
 
 .main-result {
@@ -152,9 +158,22 @@ footer .footer-info {
 }
 .main-result .movie-card .movie-poster {
   width: 100%;
+  animation: card 4s;
 }
 .main-result .movie-card:hover {
   animation: movie 1s;
+}
+
+footer {
+  background-color: #E0E2DB;
+  margin-top: 0.5rem;
+  padding: 0.5rem;
+}
+footer .footer-info {
+  font-family: "Arima", cursive;
+  font-size: 1.2rem;
+  color: #2E3532;
+  margin: 0.2rem;
 }
 
 /*# sourceMappingURL=style.css.map */
