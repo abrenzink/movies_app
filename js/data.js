@@ -12,16 +12,16 @@ fetch(requestURL)
 })
 
 function displayMovies(movie) {
-  let a = document.createElement("div");
+  let a = document.createElement("a");
   let img = document.createElement("img");
   let p = document.createElement("p");
   let ptype = document.createElement("p");
   let tspan = document.createElement("span");
   let yspan = document.createElement("span");
   
-  
- // a.href= 'https://ww1.cuevana3.me/?s=' + movie.title;
- // a.target = "_blanck";
+  let name = movie.Title;
+  a.href= 'https://ww1.cuevana3.me/?s=' + name;
+  a.target = "_blanck";
   a.className = "movie-card";
   img.src = movie.Poster;
   img.className = "movie-poster";
