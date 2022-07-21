@@ -4,7 +4,7 @@ export default class Movie{
         this.year = data.Year;
         this.type = data.Type;
       //  let cadena = data.Poster;
-        if(data.Poster == "N/A" || data.Poster.substr(0,1) == ".."){
+        if(data.Poster === "N/A" || data.Poster.substr(0,1) === ".."){
             this.poster = "https://abrenzink.github.io/movies_app/images/img-movi.jpg"
         } else{
             this.poster = data.Poster; 
