@@ -20,8 +20,8 @@ function displayMovies(movie) {
   let yspan = document.createElement("span");
   
   
-  a.href= 'https://ww1.cuevana3.me/?s=' + movie.title;
-  a.target = "_blanck";
+ // a.href= 'https://ww1.cuevana3.me/?s=' + movie.title;
+ // a.target = "_blanck";
   a.className = "movie-card";
   img.src = movie.Poster;
   img.className = "movie-poster";
