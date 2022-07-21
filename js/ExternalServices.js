@@ -18,6 +18,10 @@ export default class ExternalServices {
       .then(response => {
         this.data = response;
       })
-      .catch(err => console.error(err));
+      .catch(err => {
+        for(let message in err.message) {
+          alertMessage(err.message[message]);
+       }
+      });
     }
 }

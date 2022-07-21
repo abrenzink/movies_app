@@ -10,6 +10,5 @@ export default class List{
             const movie = new Movie(element);
             movie.renderWithTemplate(parent);
         });
-
     }
 }

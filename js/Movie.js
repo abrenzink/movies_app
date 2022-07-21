@@ -3,7 +3,11 @@ export default class Movie{
         this.title = data.Title;
         this.year = data.Year;
         this.type = data.Type;
-        this.poster = data.Poster;
+        if(data.Poster == "N/A"){
+            this.poster = "../images/img-movi.jpg"
+        } else{
+            this.poster = data.Poster; 
+        }     
         this.href = `../movie-page/index.html?movie=${this.title}`;
     }
 
