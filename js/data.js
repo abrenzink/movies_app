@@ -8,7 +8,10 @@ fetch(requestURL)
   .then(function(jsonObject){
     console.table(jsonObject);
     const movies = jsonObject['movies'];
-    movies.forEach(displayMovies);
+    let sortedMovies = movies.sort(function() {
+      return 0.5 - Math.random();
+    });
+    sortedMovies.forEach(displayMovies);
 })
 
 function displayMovies(movie) {
