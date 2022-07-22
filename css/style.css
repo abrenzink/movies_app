@@ -148,13 +148,14 @@
   flex-direction: column;
   border-radius: 1.2rem;
   box-shadow: 0.5rem 0.5rem 1rem #888888;
+  text-decoration-line: none;
 }
 .main-result .movie-card p {
   font-family: "Arima", cursive;
   font-size: 1.3rem;
   color: #FFFFFF;
   margin: 0;
-  padding: 0.5rem;
+  padding: 0;
 }
 .main-result .movie-card .movie-poster {
   width: 100%;

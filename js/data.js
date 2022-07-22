@@ -21,6 +21,7 @@ function displayMovies(movie) {
   let ptype = document.createElement("p");
   let tspan = document.createElement("span");
   let yspan = document.createElement("span");
+  let br = document.createElement("br");
   
   let name = movie.Title;
   a.href= 'https://ww1.cuevana3.me/?s=' + name;
@@ -36,6 +37,7 @@ function displayMovies(movie) {
   ptype.textContent = `${movie.Type}`;
   
   p.appendChild(tspan);
+  p.appendChild(br);
   p.appendChild(yspan);
   a.appendChild(img);
   a.appendChild(p);
